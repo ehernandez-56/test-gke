@@ -15,5 +15,5 @@ spec:
     spec:
       containers:
         - name: app
-          image: gcr.io/PROJECT_ID/IMAGE:TAG
+          image: gcr.io/liverpool-monitor/$IMAGE:$GITHUB_SHA
           imagePullPolicy: Always
