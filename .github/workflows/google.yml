@@ -32,8 +32,8 @@ jobs:
 
     steps:
     - name: Checkout
-      run: echo "$IMAGE" \
-        echo "$GITHUB_SHA"
+      run: echo some/$IMAGE \
+        echo/"$GITHUB_SHA"
       
 
     
