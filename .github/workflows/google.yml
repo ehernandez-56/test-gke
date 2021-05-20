@@ -64,7 +64,7 @@ jobs:
     # Push the Docker image to Google Container Registry
     - name: Publish
       run: |-
-        docker push "gcr.io/liverpool-automatizacion/$IMAGE:$GITHUB_SHA"
+        docker push gcr.io/liverpool-automatizacion/$IMAGE:$GITHUB_SHA
 
     # Set up kustomize
     - name: Set up Kustomize
