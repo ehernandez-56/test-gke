@@ -23,7 +23,7 @@ env:
   GKE_ZONE: us-central1-c   # TODO: update to cluster zone
   DEPLOYMENT_NAME: gke-test # TODO: update to deployment name
   IMAGE: static-site
-  TAG: $GITHUB_SHA
+  TAG: ${{ env.GITHUB_SHA }}
 
 jobs:
   setup-build-publish-deploy:
@@ -32,6 +32,9 @@ jobs:
     environment: production
 
     steps:
+
+    - name: Env
+      run: echo $GITHUB_SHA ${{env.GITHUB_SHA}}
     - name: Checkout
       uses: actions/checkout@v2
 
