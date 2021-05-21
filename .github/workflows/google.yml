@@ -23,6 +23,7 @@ env:
   GKE_ZONE: us-central1-c   # TODO: update to cluster zone
   DEPLOYMENT_NAME: gke-test # TODO: update to deployment name
   IMAGE: static-site
+  TAG: 1.0.0
 
 jobs:
   setup-build-publish-deploy:
